@@ -102,7 +102,11 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="hFd-qN-f5T">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="78n-hM-0i6"/>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="78n-hM-0i6">
+                            <connections>
+                                <segue destination="seG-tH-gv7" kind="modal" modalTransitionStyle="flipHorizontal" id="oYc-3b-IaG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="billField" destination="6TF-B8-6XK" id="EVi-ry-x5t"/>
@@ -122,13 +126,25 @@
             </objects>
             <point key="canvasLocation" x="718" y="306"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="e6m-eK-Pem">
             <objects>
-                <viewController id="seG-tH-gv7" sceneMemberID="viewController">
+                <viewController id="seG-tH-gv7" customClass="SettingsViewController" customModule="tipcalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JXu-gg-q0H">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zs2-fT-4cl">
+                                <rect key="frame" x="137" y="441" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneClicked:" destination="seG-tH-gv7" eventType="touchUpInside" id="8aB-QK-i7Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
