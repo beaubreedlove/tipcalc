@@ -13,6 +13,7 @@
 		8BC23CBD1B8BEAAC00AE1DD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC23CBC1B8BEAAC00AE1DD0 /* Images.xcassets */; };
 		8BC23CC01B8BEAAC00AE1DD0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC23CBE1B8BEAAC00AE1DD0 /* LaunchScreen.xib */; };
 		8BC23CCC1B8BEAAC00AE1DD0 /* tipcalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC23CCB1B8BEAAC00AE1DD0 /* tipcalcTests.swift */; };
+		8BC23CD61B8BFBF300AE1DD0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8BC23CD51B8BFBF300AE1DD0 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8BC23CC51B8BEAAC00AE1DD0 /* tipcalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipcalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC23CCA1B8BEAAC00AE1DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BC23CCB1B8BEAAC00AE1DD0 /* tipcalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipcalcTests.swift; sourceTree = "<group>"; };
+		8BC23CD51B8BFBF300AE1DD0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../Downloads/README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				8BC23CB51B8BEAAC00AE1DD0 /* AppDelegate.swift */,
 				8BC23CB71B8BEAAC00AE1DD0 /* ViewController.swift */,
 				8BC23CB91B8BEAAC00AE1DD0 /* Main.storyboard */,
+				8BC23CD51B8BFBF300AE1DD0 /* README.md */,
 				8BC23CBC1B8BEAAC00AE1DD0 /* Images.xcassets */,
 				8BC23CBE1B8BEAAC00AE1DD0 /* LaunchScreen.xib */,
 				8BC23CB31B8BEAAC00AE1DD0 /* Supporting Files */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC23CD61B8BFBF300AE1DD0 /* README.md in Sources */,
 				8BC23CB81B8BEAAC00AE1DD0 /* ViewController.swift in Sources */,
 				8BC23CB61B8BEAAC00AE1DD0 /* AppDelegate.swift in Sources */,
 			);
@@ -341,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tipcalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tipcalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
