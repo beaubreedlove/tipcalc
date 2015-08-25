@@ -11,9 +11,9 @@ import UIKit
 class SettingsViewController: UIViewController {
     
     
-    @IBOutlet weak var defaultTip1: UITextField!
-    @IBOutlet weak var defaultTip2: UITextField!
-    @IBOutlet weak var defaultTip3: UITextField!
+//    @IBOutlet weak var defaultTip1: UITextField!
+//    @IBOutlet weak var defaultTip2: UITextField!
+//    @IBOutlet weak var defaultTip3: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
