@@ -14,6 +14,7 @@
 		8BC23CC01B8BEAAC00AE1DD0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC23CBE1B8BEAAC00AE1DD0 /* LaunchScreen.xib */; };
 		8BC23CCC1B8BEAAC00AE1DD0 /* tipcalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC23CCB1B8BEAAC00AE1DD0 /* tipcalcTests.swift */; };
 		8BC23CD61B8BFBF300AE1DD0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8BC23CD51B8BFBF300AE1DD0 /* README.md */; };
+		8BC23CF11B8C0F1500AE1DD0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC23CF01B8C0F1500AE1DD0 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		8BC23CCA1B8BEAAC00AE1DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BC23CCB1B8BEAAC00AE1DD0 /* tipcalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipcalcTests.swift; sourceTree = "<group>"; };
 		8BC23CD51B8BFBF300AE1DD0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../Downloads/README.md; sourceTree = "<group>"; };
+		8BC23CF01B8C0F1500AE1DD0 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				8BC23CB51B8BEAAC00AE1DD0 /* AppDelegate.swift */,
 				8BC23CB71B8BEAAC00AE1DD0 /* ViewController.swift */,
 				8BC23CB91B8BEAAC00AE1DD0 /* Main.storyboard */,
+				8BC23CF01B8C0F1500AE1DD0 /* SettingsViewController.swift */,
 				8BC23CD51B8BFBF300AE1DD0 /* README.md */,
 				8BC23CBC1B8BEAAC00AE1DD0 /* Images.xcassets */,
 				8BC23CBE1B8BEAAC00AE1DD0 /* LaunchScreen.xib */,
@@ -218,6 +221,7 @@
 				8BC23CD61B8BFBF300AE1DD0 /* README.md in Sources */,
 				8BC23CB81B8BEAAC00AE1DD0 /* ViewController.swift in Sources */,
 				8BC23CB61B8BEAAC00AE1DD0 /* AppDelegate.swift in Sources */,
+				8BC23CF11B8C0F1500AE1DD0 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +419,7 @@
 				8BC23CD11B8BEAAC00AE1DD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BC23CD21B8BEAAC00AE1DD0 /* Build configuration list for PBXNativeTarget "tipcalcTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				8BC23CD41B8BEAAC00AE1DD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
