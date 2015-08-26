@@ -20,6 +20,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let tipDefaults = ["tip1": 18, "tip2": 20, "tip3": 22]
+        
+        NSUserDefaults.standardUserDefaults().registerDefaults(tipDefaults)
+        
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+        
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
     }
