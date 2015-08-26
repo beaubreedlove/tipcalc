@@ -22,6 +22,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let tip1 = defaults.integerForKey("tip1")
+        let tip2 = defaults.integerForKey("tip2")
+        let tip3 = defaults.integerForKey("tip3")
+        
+        tipControl.setTitle("\(tip1)%", forSegmentAtIndex: 0)
+        tipControl.setTitle("\(tip2)%", forSegmentAtIndex: 1)
+        tipControl.setTitle("\(tip3)%", forSegmentAtIndex: 2)
     }
 
     override func didReceiveMemoryWarning() {
