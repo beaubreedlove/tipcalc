@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
         let defaults = NSUserDefaults.standardUserDefaults()
         let tip1 = defaults.integerForKey("tip1")
