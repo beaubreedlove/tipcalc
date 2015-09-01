@@ -27,9 +27,11 @@ class ViewController: UIViewController {
         
         NSUserDefaults.standardUserDefaults().synchronize()
         
+        billField.becomeFirstResponder()
         
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        
     }
     
     override func viewWillAppear(animated: Bool) {
