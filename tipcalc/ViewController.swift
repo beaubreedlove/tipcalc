@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var totalLabel: UILabel!
-    @IBOutlet weak var perPersonLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,18 +64,17 @@ class ViewController: UIViewController {
         var total = billAmount + tip
         
         tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
+        
         
         var splitOptions = [1.0, 2.0, 3.0, 4.0]
         
         var split = splitOptions[splitControl.selectedSegmentIndex]
         
         if (split == 1) {
-            perPersonLabel.text = ""
+            totalLabel.text = String(format: "$%.2f", total)
         } else {
             var totalPerPerson = total / split
-            
-            perPersonLabel.text = String(format: "$%.2f each", totalPerPerson)
+            totalLabel.text = String(format: "$%.2f", total)  + String(format: " ($%.2f/ea)", totalPerPerson)
         }
     }
     
